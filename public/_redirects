@@ -1,0 +1,1 @@
+/api/*  http://90.156.227.182:3000/shop/public/:splat  200

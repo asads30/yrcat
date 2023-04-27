@@ -1,0 +1,81 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "image": "https://static.insales-cdn.com/r/4IfYJJnj8c4/rs:fit:1500:1500:1/plain/images/products/1/4168/629141576/shirt_back_kultizdat.jpg",
+            "name": "Футболка «ОРГАНИЗАЦИЯ KULTIZDAT»",
+            "price": 2500,
+            "category_id": 1
+        },
+        {
+            "id": 2,
+            "image": "https://static.insales-cdn.com/r/n8ZLn0H4D_c/rs:fit:1500:1500:1/plain/images/products/1/7191/629144599/shirt_back_ut__1_.jpg",
+            "name": "Футболка Ultima Thule",
+            "price": 3000,
+            "category_id": 1
+        },
+        {
+            "id": 3,
+            "image": "https://static.insales-cdn.com/r/an-rxhnLGZM/rs:fit:1500:1500:1/plain/images/products/1/1936/373671824/13-min.jpg",
+            "name": "Футболка Oxxxy logo чёрная",
+            "price": 1600,
+            "category_id": 1
+        },
+        {
+            "id": 4,
+            "image": "https://static.insales-cdn.com/r/OiZVDrinMlA/rs:fit:1500:1500:1/plain/images/products/1/4797/386273981/sunanastasia_27-min.jpg",
+            "name": "Футболка Do what thou wilt чёрная",
+            "price": 1600,
+            "category_id": 1
+        },
+        {
+            "id": 5,
+            "image": "https://static.insales-cdn.com/r/iiIQHtRqnBI/rs:fit:1500:1500:1/plain/images/products/1/209/386277585/sunanastasia_26-min.jpg",
+            "name": "Футболка Kultizdat белая",
+            "price": 690,
+            "category_id": 1
+        },
+        {
+            "id": 6,
+            "image": "https://static.insales-cdn.com/r/WL9D1JodyXg/rs:fit:1500:1500:1/plain/images/products/1/4057/373755865/ДПД_-_2-min.jpg",
+            "name": "Футболка «Долгий путь домой» чёрная",
+            "price": 1600,
+            "category_id": 1
+        },
+        {
+            "id": 7,
+            "image": "https://static.insales-cdn.com/r/huQ6CxV73k4/rs:fit:1500:1500:1/plain/images/products/1/5237/629150837/hoodie_front_kultizdat.jpg",
+            "name": "Худи «ОРГАНИЗАЦИЯ KULTIZDAT»",
+            "price": 6000,
+            "category_id": 2
+        },
+        {
+            "id": 8,
+            "image": "https://static.insales-cdn.com/r/wnf445ZfjRI/rs:fit:1500:1500:1/plain/images/products/1/3896/629821240/КиУ_бэк__1_.png",
+            "name": "CD «Красота и Уродство»",
+            "price": 500,
+            "category_id": 3
+        },
+        {
+            "id": 9,
+            "image": "https://static.insales-cdn.com/r/UANF54lD86I/rs:fit:1500:1500:1/plain/images/products/1/3403/629820747/СВ_бэк.png",
+            "name": "miXXXtape III «Смутное время»",
+            "price": 500,
+            "category_id": 3
+        },
+        {
+            "id": 10,
+            "image": "https://static.insales-cdn.com/r/sICfkXAJszU/rs:fit:1500:1500:1/plain/images/products/1/5741/373061229/IMG_2830.jpg",
+            "name": "CD «Горгород»",
+            "price": 500,
+            "category_id": 3
+        },
+        {
+            "id": 11,
+            "image": "https://static.insales-cdn.com/r/wnf445ZfjRI/rs:fit:1500:1500:1/plain/images/products/1/3896/629821240/КиУ_бэк__1_.png",
+            "name": "CD «Вечный жид»",
+            "price": 300,
+            "category_id": 3
+        }
+    ]
+}
