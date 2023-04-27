@@ -66,7 +66,7 @@
         }
       },
       loadData(){
-        const id = this.$route.query.tgWebAppStartParam;
+        const id = this.$route.params.id;
         const tg = window.Telegram.WebApp;
         tg.isClosingConfirmationEnabled = true;
         tg.expand();
