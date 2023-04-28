@@ -3,7 +3,7 @@
       <div class="header">
         <b-nav pills class="header-nav" slot="header" v-b-scrollspy:nav-scroller>
           <b-nav-item 
-            v-for="category in getActiveCategories"
+            v-for="category in categories"
             :key="category.id"
             :href="'#cat' + category.id" 
             @click="scrollIntoView"
@@ -36,7 +36,7 @@ import {mapState, mapMutations, mapActions, mapGetters} from 'vuex';
 import { api } from '@/services/api'
 
 export default {
-  name: "AppCatalog",
+  name: "AppHome",
   components: {AppCatalogItem},
   computed: {
     ...mapState([
