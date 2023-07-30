@@ -1,7 +1,7 @@
 <template>
     <div class="product" v-if="product">
         <div class="product-box">
-            <div :style="'background-image: url(' + background(product.post_id) + ');'" class="product-img"></div>
+            <div :style="background(product.post_id)" class="product-img"></div>
             <div class="product-info">
                 <div class="product-header">
                     <div class="product-name">{{ product.name }}</div>
@@ -49,7 +49,8 @@
                 this.quantity++
             },
             background (post_id) {
-                const url = 'http://90.156.227.182:4000/' + post_id + '/' + post_id + '_thumbnail200.webp';
+                const url = 'http://90.156.227.182:4000/' + post_id + '/' + post_id + '_thumbnail400.webp';
+                const result = 'background: url(' + url + ');';
                 return url
             },
             async fetchProduct(){
