@@ -1,7 +1,7 @@
 <template>
     <div class="product" v-if="product">
         <div class="product-box">
-            <div :style="'background-image: url("http://90.156.227.182:4000/' + product.post_id + '/' + product.post_id + '_thumbnail400.webp");'" class="product-img"></div>
+            <div :style="'background-image: url(' + background(product.post_id) + ');'" class="product-img"></div>
             <div class="product-info">
                 <div class="product-header">
                     <div class="product-name">{{ product.name }}</div>
@@ -48,14 +48,9 @@
                 this.$store.commit('increaseQuantity', this.product.id);
                 this.quantity++
             },
-            background (buffer) {
-                var binary = '';
-                var bytes = new Uint8Array( buffer );
-                var len = bytes.byteLength;
-                for (var i = 0; i < len; i++) {
-                    binary += String.fromCharCode( bytes[ i ] );
-                }
-                return 'data:image/png;base64,' + window.btoa( binary )
+            background (post_id) {
+                const url = 'http://90.156.227.182:4000/' + post_id + '/' + post_id + '_thumbnail200.webp';
+                return url
             },
             async fetchProduct(){
                 const id_store = localStorage.getItem('id_store');

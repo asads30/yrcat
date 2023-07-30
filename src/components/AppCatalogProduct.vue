@@ -1,7 +1,7 @@
 <template>
   <div class="item" v-if="product">
     <router-link :to="'/product/' + product.id" class="item-top">
-      <div :style="'background-image: url("http://90.156.227.182:4000/' + product.post_id + '/' + product.post_id + '_thumbnail200.webp");'" class="item-img"></div>
+      <div :style="'background-image: url(' + background(product.post_id) + ');'" class="item-img"></div>
     </router-link>
     <div class="item-info">
       <router-link :to="'/product/' + product.id" class="item-name">{{ product.name }}</router-link>
@@ -52,14 +52,9 @@ methods: {
     let current = this.$store.state.cart.find(product => product.id === this.product.id)?.quantity || null
     this.quantity = current
   },
-  background (buffer) {
-    var binary = '';
-    var bytes = new Uint8Array( buffer );
-    var len = bytes.byteLength;
-    for (var i = 0; i < len; i++) {
-        binary += String.fromCharCode( bytes[ i ] );
-    }
-    return 'data:image/png;base64,' + window.btoa( binary )
+  background (post_id) {
+    const url = 'http://90.156.227.182:4000/' + post_id + '/' + post_id + '_thumbnail200.webp';
+    return url
   }
 },
 mounted() {
