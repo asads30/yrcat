@@ -1,7 +1,7 @@
 <template>
   <div class="item" v-if="product">
     <router-link :to="'/product/' + product.id" class="item-top">
-      <div :style="'background-image: url(' + background(product.thumbnail_buffer.data) + ');'" class="item-img"></div>
+      <div :style="'background-image: url("http://90.156.227.182:4000/' + product.post_id + '/' + product.post_id + '_thumbnail200.webp");'" class="item-img"></div>
     </router-link>
     <div class="item-info">
       <router-link :to="'/product/' + product.id" class="item-name">{{ product.name }}</router-link>

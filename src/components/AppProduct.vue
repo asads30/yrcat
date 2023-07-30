@@ -1,7 +1,7 @@
 <template>
     <div class="product" v-if="product">
         <div class="product-box">
-            <div :style="'background-image: url(' + background(product.thumbnail_buffer.data) + ');'" class="product-img"></div>
+            <div :style="'background-image: url("http://90.156.227.182:4000/' + product.post_id + '/' + product.post_id + '_thumbnail400.webp");'" class="product-img"></div>
             <div class="product-info">
                 <div class="product-header">
                     <div class="product-name">{{ product.name }}</div>
